@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Basketball ROI</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-spot-theme.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="../static/img/basketball.png">Basketball ROI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="slides.html">Slides</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="headerwrap_nobackground">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-4">
+            <br><br>
+            <h1>{{ player_name }}</h1>
+            <img src="http://i.cdn.turner.com/nba/nba/.element/img/2.0/sect/statscube/players/large/{{ picture_url }}">
+            <br>
+            <h3> {{ team_name }}
+            <img src="http://stats.nba.com/media/img/teams/logos/{{ logo_url }}" type="image/svg+xml" style="width:96px; height:96px;">
+            </h3>
+            <br>
+            <h4>Height:  {{ height }}</h4>
+            <h4>Weight:  {{ weight }} lbs</h4>
+            <h4>Birth Date:  {{ birthdate }}</h4>
+            <h4>Years Pro:  {{ yearspro }}</h4>
+            <br>
+          </div>
+          <div class="col-s-4">
+            <br><br><br><br><br><br>
+            <h3>Probability of missing<br>more than 10 percent<br>
+            of regular season games:</h3>
+            <h1>{{ probability }}</h1>
+            <br><br><br>
+            <h2>Similar Players:</h2>
+            <br>
+            <h3>{{ similarplayers }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+	  <div id="f">
+      <div class="container">
+        <div class="row centered">
+        </div>
+      </div>
+	  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>
